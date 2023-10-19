@@ -14,28 +14,96 @@
     <body>
         <header class="header" id="contacts">
             <div class="header__container-logo-sidebar">
-                <img  class="header__logo"src="../images/logo.png" alt="zyro-image.png">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="header__icon bi bi-list" viewBox="0 0 16 16">
-                    <path class="header__path-icon" fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
-                </svg>
+                <img class="header__logo"src="../images/logo.png" alt="logo.png">
             </div>
             <nav class="header__container-navbar">
-                <a  class="header__link"href="../index.html">HOME</a>
-                <a  class="header__link"href="programs.html">PROGRAMS</a>
-                <a  class="header__link"href="products.html">PRODUCTS</a>
-                <a  class="header__link"href="contacts.html">CONTACTS</a>
+                <a class="header__link"href="../index.html">HOME</a>
+                <a class="header__link"href="programs.html">PROGRAMAS</a>
+                <a class="header__link"href="products.html">PRODUCTOS</a>
+                <a class="header__link"href="contacts.html">CONTACTOS</a>
             </nav>
             <div class="header__container-count">
                 <a class="header__count-logo-text" href="my-account">
-                    <!-- <i class="fa-solid fa-user"></i> -->
-                    <i class="header__count-logo fa-solid fa-circle-user"></i>
-                    <span class="header__count-text">MY ACCOUNT</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="header__link-icon bi bi-person-circle" viewBox="0 0 16 16">
+                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                        <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+                    </svg>
+                    <span class="header__count-text">MI CUENTA</span>
                 </a>
             </div>
+            <button class="header__container-icon-button" id="open-sidebar">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="header__icon bi bi-list" viewBox="0 0 16 16">
+                    <path class="header__path-icon" fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                </svg>
+            </button>
         </header>
         <main class="main">
-            <section class="main__container-img">
-                <img class="main__img" src="../images/contacts-img.png" alt="contacts-img.jpg">
+            <section class="main__container-sidebar" id="sidebarFull">
+                <div class="main__sidebar-logo-close">
+                    <img class="main__logo" src="../images/logo.png" alt="logo.png">
+                    <button class="main__close" id="close-sidebar">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="main__close-icon bi bi-box-arrow-in-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M6 3.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 0-1 0v2A1.5 1.5 0 0 0 6.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-8A1.5 1.5 0 0 0 5 3.5v2a.5.5 0 0 0 1 0v-2z"/>
+                            <path fill-rule="evenodd" d="M11.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H1.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z"/>
+                        </svg>
+                    </button>
+                </div>
+                <div class="main__container-list">
+                    <ul class="main__container-links">
+                        <li class="main__item-link">
+                            <a class="main__link" href="../index.html">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="main__item-icon bi bi-chevron-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                                </svg>
+                                <span class="main__link-text">HOME</span>
+                            </a>
+                        </li>
+                        <li class="main__item-link">
+                            <a class="main__link" href="programs.html">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="main__item-icon bi bi-chevron-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                                </svg>
+                                <span class="main__link-text">PROGRAMAS</span>
+                            </a>
+                        </li>
+                        <li class="main__item-link">
+                            <a class="main__link" href="products.html">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="main__item-icon bi bi-chevron-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                                </svg>
+                                <span class="main__link-text">PRODUCTOS</span>
+                            </a>
+                        </li>
+                        <li class="main__item-link">
+                            <a class="main__link" href="contacts.html">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="main__item-icon bi bi-chevron-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                                </svg>
+                                <span class="main__link-text">CONTACTOS</span>
+                            </a>
+                        </li>
+                        <li class="main__item-link">
+                            <a class="main__link" href="my-account">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="main__link-icon bi bi-person-circle" viewBox="0 0 16 16">
+                                    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                                    <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+                                </svg>
+                               <span class="main__link-text">MI CUENTA</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="main__container-subtitle-sidebar">
+                    <h3 class="main__subtitle-sidebar">GYM ZEUZ</h3>
+                </div>
+            </section>
+            <section class="main__container-img-title">
+                <div class="main__container-title">
+                    <h1 class="main__title">CONTACTOS</h1>
+                </div>
+                <div class="main__container-img">
+                    <img class="main__img" src="../images/contacts-imgfull.png" alt="contacts-imgfull.jpg">
+                </div>
             </section>
             <section class="main__container-text-form">
                 <div class="main__container-text">
@@ -44,7 +112,7 @@
                     <p class="main__text-paragraph">Quizás tengas algunas dudas y nos gustaría ayudarte a resolverlas. Completa el formulario con tu nombre y correo electronico, y formula tu consulta.</p>
                 </div>
                 <div class="main__container-form">
-                    <form class="main__form" method="POST" id="form">
+                    <form class="main__form" id="form" method="POST" action="https://formspree.io/f/mvojdjln">
                         <input class="main__form-name" type="text" name="name" id="name" placeholder="Ingresa tu Nombre" required>
                         <input class="main__form-email" type="email" name="email" id="email" placeholder="Correo Electronico" required>
                         <textarea class="main__form-text" name="message" id="message" placeholder="Escribe tu consulta aqui..." required></textarea>
@@ -55,7 +123,7 @@
         </main>
         <footer class="footer">
             <div class="footer__container-logo">
-                <img class="footer__logo" src="../images/contacts.png" alt="zyro-image.png">
+                <img class="footer__logo" src="../images/contacts.png" alt="contacts.png">
             </div>
             <div class="footer__conteiner-icon-link">
                 <a class="footer__link-mail" href="mailto:gimnacioZeus@gmail.com">
@@ -78,12 +146,13 @@
                 </svg>
             </div>
             <div class="footer__container-button">
-                <a class="footer__button">
+                <button class="footer__button" id="buttonScroll">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="footer__button-icon bi bi-arrow-up-circle-fill" viewBox="0 0 16 16">
                         <path class="footer__icon-arrow" d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"/>
                     </svg>
-                </a>
+                </button>
             </div>
         </footer>
+        <script src="../js/app.js"></script>
     </body>
 </html>
