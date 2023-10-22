@@ -161,6 +161,8 @@
 
 /*Footer*/
 .footer {
+    position: relative;
+    z-index: 2;
     border-top: 0.5rem solid #32343b;
     background-color: #131318;
     display: flex;
@@ -233,11 +235,19 @@
     padding-top: 1.3rem;
 }
 
+.footer__link-social {
+    text-decoration: none;
+    width: max-content;
+    margin: 0rem 0.7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .footer__social-facebook,
 .footer__social-instagram,
 .footer__social-whatsapp {
-    width: 1.7rem;
-    margin: 0rem 0.7rem;
+    width: 1.777rem;
     color: #053ecf;
 }
 
@@ -357,10 +367,6 @@
     text-align: center;
     text-shadow: 0px 0px 12px #556efa;
 }
-
-
-
-
 
 @media(min-width: 768px) {
     .header__logo {
@@ -517,7 +523,7 @@
     .footer__social-facebook,
     .footer__social-instagram,
     .footer__social-whatsapp {
-        width: 2.37rem;
+        width: 2.377rem;
     }
 
     .footer__button-icon {
