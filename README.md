@@ -24,11 +24,9 @@ La aplicación permite las siguientes funcionalidades:
 ### Github
 - [@Liliana Jimenez](https://github.com/lilicell)
 - [@Eduardo Ojeda](https://github.com/Edujeo)
-- [@Daniel Flores](https://github.com/v1nanu)
 - [@Daniel Siporo](https://github.com/DanielSw777)
 
 ### 📫E-mails
 - Liliana Jimenez: lilijimenez2323@gmail.com
 - Eduardo Ojeda: edujeo_@hotmail.com
-- Daniel Flores: danielf199810@gmail.com
 - Daniel Siporo: danieledgar.sw@gmail.com
