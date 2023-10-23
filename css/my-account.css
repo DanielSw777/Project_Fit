@@ -129,7 +129,7 @@
 }
 
 .main__container-form {
-    padding: 1.3rem 1rem;
+    padding: 1.3rem 0.777rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -155,7 +155,7 @@
     height: 2.5rem;
     background-color: white;
     padding: 0.7rem;
-    margin: 0.7rem 0rem;
+    margin: 0.5rem 0rem;
     color: #0135b6;
 }
 
@@ -180,7 +180,7 @@
     border: 0;
     border-radius: 1rem;
     height: 2.5rem;
-    margin: 0.7rem 0rem;
+    margin: 0.5rem 0rem;
     width: 60%;
     color: #032a8d;
     background-color: rgb(190, 188, 188);
@@ -195,6 +195,26 @@
     border: 1px solid #023ccc;
     box-shadow: 0px 0px 17px #044bff;
     text-shadow: 0px 0px 10px #0c51ff;
+}
+
+.main__form-text {
+    color: white;
+    font-size: 1rem;
+    margin: 0.2rem 0rem;
+}
+
+.main__form-link-reg {
+    text-decoration: none;
+    color: #608dff;
+    font-size: 1.1rem;
+    margin: 0.2rem 0rem;
+
+    transition: all 1s ease-in-out .5s;
+}
+
+.main__form-link-reg:hover {
+    scale: 1.1;
+    text-shadow: 0px 0px 1px white;
 }
 
 /*Footer*/
@@ -442,10 +462,11 @@ input[type="email"].invalid {
 
     .main__form-title {
         margin: 0.777rem 0rem;
+        font-size: 2rem;
     }
 
     .main__form {
-        padding: 1.3rem 1.7rem;
+        padding: 1.437rem 1.53rem;
     }
 
     .main__text-subtitle {
@@ -460,9 +481,14 @@ input[type="email"].invalid {
     .main__form-password,
     .main__form-email,
     .main__form-submit {
-        margin: 0.777rem 0rem;
+        margin: 0.6rem 0rem;
         height: 2.673rem;
-        font-size: 0.8rem;
+        font-size: 0.87rem;
+    }
+
+    .main__form-text,
+    .main__form-link-reg {
+        margin: 0.3rem 0rem;
     }
 }
 
@@ -555,7 +581,11 @@ input[type="email"].invalid {
     }
 
     .main__form {
-        padding: 1.3rem 2rem;
+        padding: 1.537rem 2rem;
+    }
+
+    .main__form-title {
+        font-size: 2.177rem;
     }
 
     .main__text-subtitle {
@@ -570,7 +600,12 @@ input[type="email"].invalid {
     .main__form-email,
     .main__form-submit {
         height: 2.7rem;
-        font-size: 0.9rem;
+        font-size: 0.93rem;
+    }
+
+    .main__form-text,
+    .main__form-link-reg {
+        margin: 0.373rem 0rem;
     }
 
     .footer__copyright {
@@ -598,31 +633,39 @@ input[type="email"].invalid {
 
 @media(min-width: 1200px) {
     .main__container-text-form {
-        padding: 2.7rem;
+        padding: 2rem;
     }
 
     .main__container-form,
     .main__container-text {
-        margin: 3.777rem;
+        margin: 3.8rem;
     }
 
     .main__form {
-        padding: 1.7rem 3rem;
+        padding: 1.7rem 3.377rem;
+    }
+
+    .main__form-title {
+        font-size: 2.3rem;
+        margin: 1rem 0rem;
+
     }
 
     .main__text-subtitle {
         font-size: 3.777rem;
     }
 
-    .main__form-submit,
-    .main__form-title {
-        margin: 1rem 0rem;
-    }
-
     .main__form-email,
     .main__form-password,
     .main__form-submit {
         height: 3rem;
-        font-size: 1rem;
+        font-size: 1.03rem;
+        margin: 0.777rem 0rem;
+    }
+
+    .main__form-text,
+    .main__form-link-reg {
+        margin: 0.377rem 0rem;
+        font-size: 1.177rem;
     }
 }
