@@ -97,7 +97,22 @@
     -webkit-background-clip: text;
     color: transparent;
     background-size: 200% 100%;
-    animation: changeColor 5s linear infinite;
+    animation: changeColor 5s linear infinite,
+        tracking-in-expand 1s ease-in-out;
+}
+
+@keyframes tracking-in-expand {
+    0% {
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 0.6;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 @keyframes changeColor {
@@ -112,6 +127,40 @@
 
 .main__img-fondo {
     width: 100%;
+    animation: focus-in-expand-fwd 2s cubic-bezier(0.250, 0.460, 0.450, 0.940);
+}
+
+@keyframes focus-in-expand-fwd {
+    0% {
+        letter-spacing: -0.5em;
+        -webkit-transform: translateZ(-800px);
+        transform: translateZ(-800px);
+        -webkit-filter: blur(12px);
+        filter: blur(12px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+        -webkit-filter: blur(0);
+        filter: blur(0);
+        opacity: 1;
+    }
+}
+
+@keyframes text-focus-in {
+    0% {
+        -webkit-filter: blur(12px);
+        filter: blur(12px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-filter: blur(0px);
+        filter: blur(0px);
+        opacity: 1;
+    }
 }
 
 
